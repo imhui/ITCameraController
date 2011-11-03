@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D860E9C114624E93005449A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860E9C014624E93005449A7 /* UIKit.framework */; };
+		D860E9C314624E93005449A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860E9C214624E93005449A7 /* Foundation.framework */; };
+		D860E9C514624E93005449A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860E9C414624E93005449A7 /* CoreGraphics.framework */; };
+		D860E9CB14624E94005449A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D860E9C914624E94005449A7 /* InfoPlist.strings */; };
+		D860E9CD14624E94005449A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D860E9CC14624E94005449A7 /* main.m */; };
+		D860E9D114624E94005449A7 /* ITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D860E9D014624E94005449A7 /* ITAppDelegate.m */; };
+		D860E9D414624E94005449A7 /* ITViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860E9D314624E94005449A7 /* ITViewController.m */; };
+		D860E9D714624E94005449A7 /* ITViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D860E9D514624E94005449A7 /* ITViewController.xib */; };
+		D860E9E314624F34005449A7 /* ITCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860E9E214624F34005449A7 /* ITCameraController.m */; };
+		D860E9E714624FFD005449A7 /* ITCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860E9E514624FFD005449A7 /* ITCameraViewController.m */; };
+		D860E9E814624FFD005449A7 /* ITCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D860E9E614624FFD005449A7 /* ITCameraViewController.xib */; };
+		D860E9EE1462515D005449A7 /* itcamera_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9EA1462515D005449A7 /* itcamera_bg.png */; };
+		D860E9EF1462515D005449A7 /* itcamera_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9EB1462515D005449A7 /* itcamera_bg@2x.png */; };
+		D860E9F01462515D005449A7 /* itcamera_pre_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9EC1462515D005449A7 /* itcamera_pre_bg.png */; };
+		D860E9F11462515D005449A7 /* itcamera_pre_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9ED1462515D005449A7 /* itcamera_pre_bg@2x.png */; };
+		D860EA02146251B2005449A7 /* itcamera_cam_h.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F2146251B2005449A7 /* itcamera_cam_h.png */; };
+		D860EA03146251B2005449A7 /* itcamera_cam_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F3146251B2005449A7 /* itcamera_cam_h@2x.png */; };
+		D860EA04146251B2005449A7 /* itcamera_cam.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F4146251B2005449A7 /* itcamera_cam.png */; };
+		D860EA05146251B2005449A7 /* itcamera_cam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F5146251B2005449A7 /* itcamera_cam@2x.png */; };
+		D860EA06146251B2005449A7 /* itcamera_cancel_h.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F6146251B2005449A7 /* itcamera_cancel_h.png */; };
+		D860EA07146251B2005449A7 /* itcamera_cancel_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F7146251B2005449A7 /* itcamera_cancel_h@2x.png */; };
+		D860EA08146251B2005449A7 /* itcamera_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F8146251B2005449A7 /* itcamera_cancel.png */; };
+		D860EA09146251B2005449A7 /* itcamera_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9F9146251B2005449A7 /* itcamera_cancel@2x.png */; };
+		D860EA0A146251B2005449A7 /* itcamera_pre_cancel_h.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FA146251B2005449A7 /* itcamera_pre_cancel_h.png */; };
+		D860EA0B146251B2005449A7 /* itcamera_pre_cancel_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FB146251B2005449A7 /* itcamera_pre_cancel_h@2x.png */; };
+		D860EA0C146251B2005449A7 /* itcamera_pre_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FC146251B2005449A7 /* itcamera_pre_cancel.png */; };
+		D860EA0D146251B2005449A7 /* itcamera_pre_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FD146251B2005449A7 /* itcamera_pre_cancel@2x.png */; };
+		D860EA0E146251B2005449A7 /* itcamera_pre_use_h.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FE146251B2005449A7 /* itcamera_pre_use_h.png */; };
+		D860EA0F146251B2005449A7 /* itcamera_pre_use_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860E9FF146251B2005449A7 /* itcamera_pre_use_h@2x.png */; };
+		D860EA10146251B2005449A7 /* itcamera_pre_use.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA00146251B2005449A7 /* itcamera_pre_use.png */; };
+		D860EA11146251B2005449A7 /* itcamera_pre_use@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA01146251B2005449A7 /* itcamera_pre_use@2x.png */; };
+		D860EA14146264A5005449A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860EA12146264A5005449A7 /* AVFoundation.framework */; };
+		D860EA15146264A5005449A7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860EA13146264A5005449A7 /* ImageIO.framework */; };
+		D860EA1C14626A2B005449A7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D860EA1B14626A2B005449A7 /* CoreMedia.framework */; };
+		D860EA2B14626B91005449A7 /* itcamera_flash_auto.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA1D14626B90005449A7 /* itcamera_flash_auto.png */; };
+		D860EA2C14626B91005449A7 /* itcamera_flash_auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA1E14626B90005449A7 /* itcamera_flash_auto@2x.png */; };
+		D860EA2D14626B91005449A7 /* itcamera_flash_off.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA1F14626B90005449A7 /* itcamera_flash_off.png */; };
+		D860EA2E14626B91005449A7 /* itcamera_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2014626B90005449A7 /* itcamera_flash_off@2x.png */; };
+		D860EA2F14626B91005449A7 /* itcamera_flash_on.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2114626B90005449A7 /* itcamera_flash_on.png */; };
+		D860EA3014626B91005449A7 /* itcamera_flash_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2214626B90005449A7 /* itcamera_flash_on@2x.png */; };
+		D860EA3114626B91005449A7 /* itcamera_flash_option_auto.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2314626B91005449A7 /* itcamera_flash_option_auto.png */; };
+		D860EA3214626B91005449A7 /* itcamera_flash_option_auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2414626B91005449A7 /* itcamera_flash_option_auto@2x.png */; };
+		D860EA3314626B91005449A7 /* itcamera_flash_option_off.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2514626B91005449A7 /* itcamera_flash_option_off.png */; };
+		D860EA3414626B91005449A7 /* itcamera_flash_option_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2614626B91005449A7 /* itcamera_flash_option_off@2x.png */; };
+		D860EA3514626B91005449A7 /* itcamera_flash_option_on.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2714626B91005449A7 /* itcamera_flash_option_on.png */; };
+		D860EA3614626B91005449A7 /* itcamera_flash_option_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2814626B91005449A7 /* itcamera_flash_option_on@2x.png */; };
+		D860EA3714626B91005449A7 /* itcamera_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2914626B91005449A7 /* itcamera_switch.png */; };
+		D860EA3814626B91005449A7 /* itcamera_switch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D860EA2A14626B91005449A7 /* itcamera_switch@2x.png */; };
+		D860EA3C14627769005449A7 /* ITCameraPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860EA3A14627769005449A7 /* ITCameraPreviewController.m */; };
+		D860EA3D14627769005449A7 /* ITCameraPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D860EA3B14627769005449A7 /* ITCameraPreviewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D860E9BC14624E93005449A7 /* ITCameraController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCameraController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D860E9C014624E93005449A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D860E9C214624E93005449A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D860E9C414624E93005449A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D860E9C814624E94005449A7 /* ITCameraController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITCameraController-Info.plist"; sourceTree = "<group>"; };
+		D860E9CA14624E94005449A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D860E9CC14624E94005449A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D860E9CE14624E94005449A7 /* ITCameraController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ITCameraController-Prefix.pch"; sourceTree = "<group>"; };
+		D860E9CF14624E94005449A7 /* ITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITAppDelegate.h; sourceTree = "<group>"; };
+		D860E9D014624E94005449A7 /* ITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITAppDelegate.m; sourceTree = "<group>"; };
+		D860E9D214624E94005449A7 /* ITViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITViewController.h; sourceTree = "<group>"; };
+		D860E9D314624E94005449A7 /* ITViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITViewController.m; sourceTree = "<group>"; };
+		D860E9D614624E94005449A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ITViewController.xib; sourceTree = "<group>"; };
+		D860E9E114624F34005449A7 /* ITCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITCameraController.h; path = Classes/ITCameraController.h; sourceTree = "<group>"; };
+		D860E9E214624F34005449A7 /* ITCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITCameraController.m; path = Classes/ITCameraController.m; sourceTree = "<group>"; };
+		D860E9E414624FFD005449A7 /* ITCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITCameraViewController.h; path = Classes/ITCameraViewController.h; sourceTree = "<group>"; };
+		D860E9E514624FFD005449A7 /* ITCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITCameraViewController.m; path = Classes/ITCameraViewController.m; sourceTree = "<group>"; };
+		D860E9E614624FFD005449A7 /* ITCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ITCameraViewController.xib; path = Classes/ITCameraViewController.xib; sourceTree = "<group>"; };
+		D860E9EA1462515D005449A7 /* itcamera_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_bg.png; sourceTree = "<group>"; };
+		D860E9EB1462515D005449A7 /* itcamera_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_bg@2x.png"; sourceTree = "<group>"; };
+		D860E9EC1462515D005449A7 /* itcamera_pre_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_pre_bg.png; sourceTree = "<group>"; };
+		D860E9ED1462515D005449A7 /* itcamera_pre_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_pre_bg@2x.png"; sourceTree = "<group>"; };
+		D860E9F2146251B2005449A7 /* itcamera_cam_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_cam_h.png; sourceTree = "<group>"; };
+		D860E9F3146251B2005449A7 /* itcamera_cam_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_cam_h@2x.png"; sourceTree = "<group>"; };
+		D860E9F4146251B2005449A7 /* itcamera_cam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_cam.png; sourceTree = "<group>"; };
+		D860E9F5146251B2005449A7 /* itcamera_cam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_cam@2x.png"; sourceTree = "<group>"; };
+		D860E9F6146251B2005449A7 /* itcamera_cancel_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_cancel_h.png; sourceTree = "<group>"; };
+		D860E9F7146251B2005449A7 /* itcamera_cancel_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_cancel_h@2x.png"; sourceTree = "<group>"; };
+		D860E9F8146251B2005449A7 /* itcamera_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_cancel.png; sourceTree = "<group>"; };
+		D860E9F9146251B2005449A7 /* itcamera_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_cancel@2x.png"; sourceTree = "<group>"; };
+		D860E9FA146251B2005449A7 /* itcamera_pre_cancel_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_pre_cancel_h.png; sourceTree = "<group>"; };
+		D860E9FB146251B2005449A7 /* itcamera_pre_cancel_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_pre_cancel_h@2x.png"; sourceTree = "<group>"; };
+		D860E9FC146251B2005449A7 /* itcamera_pre_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_pre_cancel.png; sourceTree = "<group>"; };
+		D860E9FD146251B2005449A7 /* itcamera_pre_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_pre_cancel@2x.png"; sourceTree = "<group>"; };
+		D860E9FE146251B2005449A7 /* itcamera_pre_use_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_pre_use_h.png; sourceTree = "<group>"; };
+		D860E9FF146251B2005449A7 /* itcamera_pre_use_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_pre_use_h@2x.png"; sourceTree = "<group>"; };
+		D860EA00146251B2005449A7 /* itcamera_pre_use.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_pre_use.png; sourceTree = "<group>"; };
+		D860EA01146251B2005449A7 /* itcamera_pre_use@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_pre_use@2x.png"; sourceTree = "<group>"; };
+		D860EA12146264A5005449A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D860EA13146264A5005449A7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D860EA1B14626A2B005449A7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D860EA1D14626B90005449A7 /* itcamera_flash_auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_auto.png; sourceTree = "<group>"; };
+		D860EA1E14626B90005449A7 /* itcamera_flash_auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_auto@2x.png"; sourceTree = "<group>"; };
+		D860EA1F14626B90005449A7 /* itcamera_flash_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_off.png; sourceTree = "<group>"; };
+		D860EA2014626B90005449A7 /* itcamera_flash_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_off@2x.png"; sourceTree = "<group>"; };
+		D860EA2114626B90005449A7 /* itcamera_flash_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_on.png; sourceTree = "<group>"; };
+		D860EA2214626B90005449A7 /* itcamera_flash_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_on@2x.png"; sourceTree = "<group>"; };
+		D860EA2314626B91005449A7 /* itcamera_flash_option_auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_option_auto.png; sourceTree = "<group>"; };
+		D860EA2414626B91005449A7 /* itcamera_flash_option_auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_option_auto@2x.png"; sourceTree = "<group>"; };
+		D860EA2514626B91005449A7 /* itcamera_flash_option_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_option_off.png; sourceTree = "<group>"; };
+		D860EA2614626B91005449A7 /* itcamera_flash_option_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_option_off@2x.png"; sourceTree = "<group>"; };
+		D860EA2714626B91005449A7 /* itcamera_flash_option_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_flash_option_on.png; sourceTree = "<group>"; };
+		D860EA2814626B91005449A7 /* itcamera_flash_option_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_flash_option_on@2x.png"; sourceTree = "<group>"; };
+		D860EA2914626B91005449A7 /* itcamera_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itcamera_switch.png; sourceTree = "<group>"; };
+		D860EA2A14626B91005449A7 /* itcamera_switch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itcamera_switch@2x.png"; sourceTree = "<group>"; };
+		D860EA3914627769005449A7 /* ITCameraPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITCameraPreviewController.h; path = Classes/ITCameraPreviewController.h; sourceTree = "<group>"; };
+		D860EA3A14627769005449A7 /* ITCameraPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITCameraPreviewController.m; path = Classes/ITCameraPreviewController.m; sourceTree = "<group>"; };
+		D860EA3B14627769005449A7 /* ITCameraPreviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ITCameraPreviewController.xib; path = Classes/ITCameraPreviewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D860E9B914624E93005449A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D860EA1C14626A2B005449A7 /* CoreMedia.framework in Frameworks */,
+				D860EA14146264A5005449A7 /* AVFoundation.framework in Frameworks */,
+				D860EA15146264A5005449A7 /* ImageIO.framework in Frameworks */,
+				D860E9C114624E93005449A7 /* UIKit.framework in Frameworks */,
+				D860E9C314624E93005449A7 /* Foundation.framework in Frameworks */,
+				D860E9C514624E93005449A7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D860E9B114624E93005449A7 = {
+			isa = PBXGroup;
+			children = (
+				D860E9C614624E93005449A7 /* ITCameraController */,
+				D860E9BF14624E93005449A7 /* Frameworks */,
+				D860E9BD14624E93005449A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D860E9BD14624E93005449A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D860E9BC14624E93005449A7 /* ITCameraController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D860E9BF14624E93005449A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D860EA1B14626A2B005449A7 /* CoreMedia.framework */,
+				D860EA12146264A5005449A7 /* AVFoundation.framework */,
+				D860EA13146264A5005449A7 /* ImageIO.framework */,
+				D860E9C014624E93005449A7 /* UIKit.framework */,
+				D860E9C214624E93005449A7 /* Foundation.framework */,
+				D860E9C414624E93005449A7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D860E9C614624E93005449A7 /* ITCameraController */ = {
+			isa = PBXGroup;
+			children = (
+				D860E9E91462515D005449A7 /* images */,
+				D860E9E114624F34005449A7 /* ITCameraController.h */,
+				D860E9E214624F34005449A7 /* ITCameraController.m */,
+				D860E9E414624FFD005449A7 /* ITCameraViewController.h */,
+				D860E9E514624FFD005449A7 /* ITCameraViewController.m */,
+				D860E9E614624FFD005449A7 /* ITCameraViewController.xib */,
+				D860EA3914627769005449A7 /* ITCameraPreviewController.h */,
+				D860EA3A14627769005449A7 /* ITCameraPreviewController.m */,
+				D860EA3B14627769005449A7 /* ITCameraPreviewController.xib */,
+				D860E9CF14624E94005449A7 /* ITAppDelegate.h */,
+				D860E9D014624E94005449A7 /* ITAppDelegate.m */,
+				D860E9D214624E94005449A7 /* ITViewController.h */,
+				D860E9D314624E94005449A7 /* ITViewController.m */,
+				D860E9D514624E94005449A7 /* ITViewController.xib */,
+				D860E9C714624E94005449A7 /* Supporting Files */,
+			);
+			path = ITCameraController;
+			sourceTree = "<group>";
+		};
+		D860E9C714624E94005449A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D860E9C814624E94005449A7 /* ITCameraController-Info.plist */,
+				D860E9C914624E94005449A7 /* InfoPlist.strings */,
+				D860E9CC14624E94005449A7 /* main.m */,
+				D860E9CE14624E94005449A7 /* ITCameraController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D860E9E91462515D005449A7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D860EA1D14626B90005449A7 /* itcamera_flash_auto.png */,
+				D860EA1E14626B90005449A7 /* itcamera_flash_auto@2x.png */,
+				D860EA1F14626B90005449A7 /* itcamera_flash_off.png */,
+				D860EA2014626B90005449A7 /* itcamera_flash_off@2x.png */,
+				D860EA2114626B90005449A7 /* itcamera_flash_on.png */,
+				D860EA2214626B90005449A7 /* itcamera_flash_on@2x.png */,
+				D860EA2314626B91005449A7 /* itcamera_flash_option_auto.png */,
+				D860EA2414626B91005449A7 /* itcamera_flash_option_auto@2x.png */,
+				D860EA2514626B91005449A7 /* itcamera_flash_option_off.png */,
+				D860EA2614626B91005449A7 /* itcamera_flash_option_off@2x.png */,
+				D860EA2714626B91005449A7 /* itcamera_flash_option_on.png */,
+				D860EA2814626B91005449A7 /* itcamera_flash_option_on@2x.png */,
+				D860EA2914626B91005449A7 /* itcamera_switch.png */,
+				D860EA2A14626B91005449A7 /* itcamera_switch@2x.png */,
+				D860E9EA1462515D005449A7 /* itcamera_bg.png */,
+				D860E9EB1462515D005449A7 /* itcamera_bg@2x.png */,
+				D860E9EC1462515D005449A7 /* itcamera_pre_bg.png */,
+				D860E9ED1462515D005449A7 /* itcamera_pre_bg@2x.png */,
+				D860E9F2146251B2005449A7 /* itcamera_cam_h.png */,
+				D860E9F3146251B2005449A7 /* itcamera_cam_h@2x.png */,
+				D860E9F4146251B2005449A7 /* itcamera_cam.png */,
+				D860E9F5146251B2005449A7 /* itcamera_cam@2x.png */,
+				D860E9F6146251B2005449A7 /* itcamera_cancel_h.png */,
+				D860E9F7146251B2005449A7 /* itcamera_cancel_h@2x.png */,
+				D860E9F8146251B2005449A7 /* itcamera_cancel.png */,
+				D860E9F9146251B2005449A7 /* itcamera_cancel@2x.png */,
+				D860E9FA146251B2005449A7 /* itcamera_pre_cancel_h.png */,
+				D860E9FB146251B2005449A7 /* itcamera_pre_cancel_h@2x.png */,
+				D860E9FC146251B2005449A7 /* itcamera_pre_cancel.png */,
+				D860E9FD146251B2005449A7 /* itcamera_pre_cancel@2x.png */,
+				D860E9FE146251B2005449A7 /* itcamera_pre_use_h.png */,
+				D860E9FF146251B2005449A7 /* itcamera_pre_use_h@2x.png */,
+				D860EA00146251B2005449A7 /* itcamera_pre_use.png */,
+				D860EA01146251B2005449A7 /* itcamera_pre_use@2x.png */,
+			);
+			name = images;
+			path = Classes/images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D860E9BB14624E93005449A7 /* ITCameraController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D860E9DA14624E94005449A7 /* Build configuration list for PBXNativeTarget "ITCameraController" */;
+			buildPhases = (
+				D860E9B814624E93005449A7 /* Sources */,
+				D860E9B914624E93005449A7 /* Frameworks */,
+				D860E9BA14624E93005449A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITCameraController;
+			productName = ITCameraController;
+			productReference = D860E9BC14624E93005449A7 /* ITCameraController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D860E9B314624E93005449A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D860E9B614624E93005449A7 /* Build configuration list for PBXProject "ITCameraController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D860E9B114624E93005449A7;
+			productRefGroup = D860E9BD14624E93005449A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D860E9BB14624E93005449A7 /* ITCameraController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D860E9BA14624E93005449A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D860E9CB14624E94005449A7 /* InfoPlist.strings in Resources */,
+				D860E9D714624E94005449A7 /* ITViewController.xib in Resources */,
+				D860E9E814624FFD005449A7 /* ITCameraViewController.xib in Resources */,
+				D860E9EE1462515D005449A7 /* itcamera_bg.png in Resources */,
+				D860E9EF1462515D005449A7 /* itcamera_bg@2x.png in Resources */,
+				D860E9F01462515D005449A7 /* itcamera_pre_bg.png in Resources */,
+				D860E9F11462515D005449A7 /* itcamera_pre_bg@2x.png in Resources */,
+				D860EA02146251B2005449A7 /* itcamera_cam_h.png in Resources */,
+				D860EA03146251B2005449A7 /* itcamera_cam_h@2x.png in Resources */,
+				D860EA04146251B2005449A7 /* itcamera_cam.png in Resources */,
+				D860EA05146251B2005449A7 /* itcamera_cam@2x.png in Resources */,
+				D860EA06146251B2005449A7 /* itcamera_cancel_h.png in Resources */,
+				D860EA07146251B2005449A7 /* itcamera_cancel_h@2x.png in Resources */,
+				D860EA08146251B2005449A7 /* itcamera_cancel.png in Resources */,
+				D860EA09146251B2005449A7 /* itcamera_cancel@2x.png in Resources */,
+				D860EA0A146251B2005449A7 /* itcamera_pre_cancel_h.png in Resources */,
+				D860EA0B146251B2005449A7 /* itcamera_pre_cancel_h@2x.png in Resources */,
+				D860EA0C146251B2005449A7 /* itcamera_pre_cancel.png in Resources */,
+				D860EA0D146251B2005449A7 /* itcamera_pre_cancel@2x.png in Resources */,
+				D860EA0E146251B2005449A7 /* itcamera_pre_use_h.png in Resources */,
+				D860EA0F146251B2005449A7 /* itcamera_pre_use_h@2x.png in Resources */,
+				D860EA10146251B2005449A7 /* itcamera_pre_use.png in Resources */,
+				D860EA11146251B2005449A7 /* itcamera_pre_use@2x.png in Resources */,
+				D860EA2B14626B91005449A7 /* itcamera_flash_auto.png in Resources */,
+				D860EA2C14626B91005449A7 /* itcamera_flash_auto@2x.png in Resources */,
+				D860EA2D14626B91005449A7 /* itcamera_flash_off.png in Resources */,
+				D860EA2E14626B91005449A7 /* itcamera_flash_off@2x.png in Resources */,
+				D860EA2F14626B91005449A7 /* itcamera_flash_on.png in Resources */,
+				D860EA3014626B91005449A7 /* itcamera_flash_on@2x.png in Resources */,
+				D860EA3114626B91005449A7 /* itcamera_flash_option_auto.png in Resources */,
+				D860EA3214626B91005449A7 /* itcamera_flash_option_auto@2x.png in Resources */,
+				D860EA3314626B91005449A7 /* itcamera_flash_option_off.png in Resources */,
+				D860EA3414626B91005449A7 /* itcamera_flash_option_off@2x.png in Resources */,
+				D860EA3514626B91005449A7 /* itcamera_flash_option_on.png in Resources */,
+				D860EA3614626B91005449A7 /* itcamera_flash_option_on@2x.png in Resources */,
+				D860EA3714626B91005449A7 /* itcamera_switch.png in Resources */,
+				D860EA3814626B91005449A7 /* itcamera_switch@2x.png in Resources */,
+				D860EA3D14627769005449A7 /* ITCameraPreviewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D860E9B814624E93005449A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D860E9CD14624E94005449A7 /* main.m in Sources */,
+				D860E9D114624E94005449A7 /* ITAppDelegate.m in Sources */,
+				D860E9D414624E94005449A7 /* ITViewController.m in Sources */,
+				D860E9E314624F34005449A7 /* ITCameraController.m in Sources */,
+				D860E9E714624FFD005449A7 /* ITCameraViewController.m in Sources */,
+				D860EA3C14627769005449A7 /* ITCameraPreviewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D860E9C914624E94005449A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D860E9CA14624E94005449A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D860E9D514624E94005449A7 /* ITViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D860E9D614624E94005449A7 /* en */,
+			);
+			name = ITViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D860E9D814624E94005449A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D860E9D914624E94005449A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D860E9DB14624E94005449A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITCameraController/ITCameraController-Prefix.pch";
+				INFOPLIST_FILE = "ITCameraController/ITCameraController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D860E9DC14624E94005449A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITCameraController/ITCameraController-Prefix.pch";
+				INFOPLIST_FILE = "ITCameraController/ITCameraController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D860E9B614624E93005449A7 /* Build configuration list for PBXProject "ITCameraController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D860E9D814624E94005449A7 /* Debug */,
+				D860E9D914624E94005449A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D860E9DA14624E94005449A7 /* Build configuration list for PBXNativeTarget "ITCameraController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D860E9DB14624E94005449A7 /* Debug */,
+				D860E9DC14624E94005449A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D860E9B314624E93005449A7 /* Project object */;
+}
