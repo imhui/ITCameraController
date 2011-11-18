@@ -169,6 +169,16 @@
     for (AVCaptureDevice *device in devices) {
         if (device.position == position) {
             NSError *error = nil;
+            if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
+                [device lockForConfiguration:&error];
+                if (!error) {
+                    CGPoint autofocusPoint = CGPointMake(0.5f, 0.5f);
+                    [device setFocusPointOfInterest:autofocusPoint];
+                    [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+                }
+                [device unlockForConfiguration];
+                error = nil;
+            }
             input = [[[AVCaptureDeviceInput alloc] initWithDevice:device error:&error] autorelease];
             break;
         }
@@ -197,6 +207,20 @@
     
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     NSError *error = nil;
+    
+    if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
+        [device lockForConfiguration:&error];
+        if (!error) {
+            CGPoint autofocusPoint = CGPointMake(0.5f, 0.5f);
+            [device setFocusPointOfInterest:autofocusPoint];
+            [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+        }
+        [device unlockForConfiguration];
+        error = nil;
+        
+    }
+    
+    
     AVCaptureDeviceInput *input = [[AVCaptureDeviceInput alloc] initWithDevice:device error:&error];
     if (!input) {
         NSLog(@"init device input error");
