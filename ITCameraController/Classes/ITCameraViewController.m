@@ -169,16 +169,6 @@
     for (AVCaptureDevice *device in devices) {
         if (device.position == position) {
             NSError *error = nil;
-            if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
-                [device lockForConfiguration:&error];
-                if (!error) {
-                    CGPoint autofocusPoint = CGPointMake(0.5f, 0.5f);
-                    [device setFocusPointOfInterest:autofocusPoint];
-                    [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
-                }
-                [device unlockForConfiguration];
-                error = nil;
-            }
             input = [[[AVCaptureDeviceInput alloc] initWithDevice:device error:&error] autorelease];
             break;
         }
@@ -205,18 +195,8 @@
     [layer addSublayer:previewLayer];
     [previewLayer release];
     
-    NSError *error = nil;
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
-        [device lockForConfiguration:&error];
-        if (!error) {
-            CGPoint autofocusPoint = CGPointMake(0.5f, 0.5f);
-            [device setFocusPointOfInterest:autofocusPoint];
-            [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
-        }
-        [device unlockForConfiguration];
-        error = nil;
-    }
+    NSError *error = nil;
     AVCaptureDeviceInput *input = [[AVCaptureDeviceInput alloc] initWithDevice:device error:&error];
     if (!input) {
         NSLog(@"init device input error");
